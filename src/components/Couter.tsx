@@ -37,7 +37,7 @@ const Counter = () => {
             </div>
             <div className='mt-5'>
                 <form onSubmit={onSubmitForm}>
-                    <input type="number" className={newValue === 0 ? 'py-2 pl-8 px-4 rounded-md w-24 text-center border-2 border-red-400 focus:border-green-400 focus:outline-none' : 'py-2 pl-8 px-4 rounded-md w-24 text-center border-2 border-green-400 focus:border-green-400 focus:outline-none'} value={newValue} min={0} onChange={e => setNewValue(+e.target.value)} placeholder='Please enter the Number?' />
+                    <input type="number" className={newValue === 0 ? 'py-2 pl-4 sm:pl-8 px-4 rounded-md w-24 text-center border-2 border-red-400 focus:border-green-400 focus:outline-none' : 'py-2 pl-4 sm:pl-8 px-4 rounded-md w-24 text-center border-2 border-green-400 focus:border-green-400 focus:outline-none'} value={newValue} min={0} onChange={e => setNewValue(+e.target.value)} placeholder='Please enter the Number?' />
                     <button className={newValue === 0 ? 'ml-4 text-red-400' : 'ml-4 text-green-400'} disabled={newValue === 0 ? true : false}>add new Value</button>
                 </form>
             </div>

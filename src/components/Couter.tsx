@@ -30,7 +30,7 @@ const Counter = () => {
     return (
         <div>
             <h1>Count: {count}</h1>
-            <div className='space-x-2 mt-5'>
+            <div className='space-x-2 space-y-1 mt-5'>
                 <button onClick={onClickIncrement}>Increment</button>
                 <button onClick={onClickDecrement}>Decrement</button>
                 <button onClick={onClickClearValue}>ClearValue</button>
